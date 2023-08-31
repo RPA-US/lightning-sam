@@ -31,3 +31,17 @@ Example:
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
+
+# Necessary resources
+```
+- checkpoints/sam_vit_h_4b8939.pth
+- COCO/
+    JPEGImages/
+        (screenshots...)
+    Visualization/
+        (screenshots...)
+    annotations.json
+    test.json
+    train.json
+    val.json
+```
