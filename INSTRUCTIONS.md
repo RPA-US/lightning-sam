@@ -26,3 +26,8 @@ After this you should be able to run the code by running `train.py`
 If you wish to use Cuda, make sure you have Cuda toolkit 11.7 or 11.8 installed. To check this, open a terminal and type `nvcc--version`.
 
 After installing Cuda toolkit on the required version, uninstall torch and torchvision from the virtual environment, then install them again with the respective command to your OS and cuda version as indicated in [Pytorch: get started](https://pytorch.org/get-started/locally/)
+
+Example:
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```

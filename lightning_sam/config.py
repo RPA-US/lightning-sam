@@ -16,7 +16,7 @@ config = {
     },
     "model": {
         "type": 'vit_h',
-        "checkpoint": "D:\\Code\\lightning-sam\\checkpoints\\checkpoints\\sam_vit_h_4b8939.pth",
+        "checkpoint": "..\\checkpoints\\sam_vit_h_4b8939.pth",
         "freeze": {
             "image_encoder": True,
             "prompt_encoder": True,
@@ -25,12 +25,12 @@ config = {
     },
     "dataset": {
         "train": {
-            "root_dir": "D:\\Code\\lightning-sam\\COCO",
-            "annotation_file": "D:\\Code\\lightning-sam\\COCO\\train.json"
+            "root_dir": "..\\COCO",
+            "annotation_file": "..\\COCO\\train.json"
         },
         "val": {
-            "root_dir": "D:\\Code\\lightning-sam\\COCO",
-            "annotation_file": "D:\\Code\\lightning-sam\\COCO\\val.json"
+            "root_dir": "..\\COCO",
+            "annotation_file": "..\\COCO\\val.json"
         }
     }
 }
