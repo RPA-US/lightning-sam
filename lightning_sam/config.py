@@ -1,9 +1,9 @@
 from box import Box
 
 config = {
-    "num_devices": 4,
-    "batch_size": 12,
-    "num_workers": 4,
+    "num_devices": 1,
+    "batch_size": 4,
+    "num_workers": 2,
     "num_epochs": 20,
     "eval_interval": 2,
     "out_dir": "out/training",
@@ -16,7 +16,7 @@ config = {
     },
     "model": {
         "type": 'vit_h',
-        "checkpoint": "sam_vit_h_4b8939.pth",
+        "checkpoint": "D:\\Code\\lightning-sam\\checkpoints\\checkpoints\\sam_vit_h_4b8939.pth",
         "freeze": {
             "image_encoder": True,
             "prompt_encoder": True,
@@ -25,12 +25,12 @@ config = {
     },
     "dataset": {
         "train": {
-            "root_dir": "/coco/coco2017/train2017",
-            "annotation_file": "/coco/coco2017/annotations/instances_train2017.json"
+            "root_dir": "D:\\Code\\lightning-sam\\COCO",
+            "annotation_file": "D:\\Code\\lightning-sam\\COCO\\train.json"
         },
         "val": {
-            "root_dir": "/coco/coco2017/val2017",
-            "annotation_file": "/coco/coco2017/annotations/instances_val2017.json"
+            "root_dir": "D:\\Code\\lightning-sam\\COCO",
+            "annotation_file": "D:\\Code\\lightning-sam\\COCO\\val.json"
         }
     }
 }
